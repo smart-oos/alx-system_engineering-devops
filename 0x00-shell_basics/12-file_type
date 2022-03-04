@@ -1,0 +1,9 @@
+#!/bin/bash
+type /tmp/iamafile
+
+
+target="/tmp"
+ for file in `find ${target}`
+ do
+ stat --format=%n\ -\ %F\ -\ %A $file
+ done
